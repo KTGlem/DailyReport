@@ -2,40 +2,103 @@
 
 const taskOptions = {
   MarketGarden: [
+    "Assembly & Packaging",
     "Bed Cleanup - Post Harvest",
     "Bed Prep (Tarp, Amend, Till)",
     "Bed Prep (Ground Cover, Drip Tape)",
     "Build Cat Tunnel",
     "Clean Bins",
-    "Nursery Sow"
-    // ... add remaining MarketGarden tasks from CSV
+    "Clean Wash & Pack",
+    "Direct Sow",
+    "Fertilize & Amend",
+    "Fish Fertilizer",
+    "Harden Off",
+    "Harvest / Pack",
+    "Hill Beds",
+    "Irrigate",
+    "Irrigation - Setup",
+    "Irrigation - Repairs",
+    "Mulch",
+    "Nursery Sow",
+    "Organizing & Materials Prep",
+    "Pot Up",
+    "Prune / Trellis",
+    "Sprout Potatoes",
+    "Transplant",
+    "Weed"
   ],
   Mushrooms: [
-    "Harvest",
-    "Turnover",
-    "Bag Filling",
-    "Sterilization"
-    // ... add other tasks
+    "Harvesting",
+    "Cleaning & Sanitizing",
+    "Dehydrating",
+    "Labelling"    
   ],
   CommercialKitchen: [
+    "Veg Prep",
     "Cooking",
-    "Labeling",
-    "Packaging"
-    // ... add other tasks
+    "Portioning"
+    "Labelling"
+    "Cleaning & Sanitization"
+    "Dehydrating"
   ],
   Admin: [
-    "Email",
-    "Planning",
-    "Bookkeeping"
-    // ... add other tasks
+    "Sales & Marketing",
+    "Social Media",
+    "Crop Planning"
+    "Documentation & SOPs"
+    "Staff Management & Scheduling"
+    "Customer Support & CSA"
+    "Maintenance"
   ]
 };
 
 const cropOptions = [
   "AAA-Multiple",
   "Mushrooms",
-  "Basil"
-  // ... load remaining unique crop names from CSV
+  "Basil",
+  "Beans: Bush & Pole",
+  "Beets",
+  "Bok Choy",
+  "Broccoli",
+  "Brussels Sprouts",
+  "Cabbage",
+  "Carrots",
+  "Cilantro",
+  "Collards",
+  "Corn",
+  "Cucumbers",
+  "Dill",
+  "Eggplant",
+  "Fennel",
+  "Garlic",
+  "Husk Cherry (Ground Cherry)",
+  "Kale",
+  "Kohlrabi",
+  "Leeks",
+  "Lettuce",
+  "Lettuce: Salad Mix",
+  "Melons",
+  "Onions",
+  "Onions: Scallions",
+  "Oregano",
+  "Pac Choi (Bok Choy)",
+  "Parsley",
+  "Parsnips",
+  "Peas",
+  "Peppers",
+  "Potatoes",
+  "Radishes",
+  "Sage",
+  "Shallots",
+  "Spinach",
+  "Summer Squash",
+  "Sweet Potatoes",
+  "Swiss Chard",
+  "Thyme",
+  "Tomatoes",
+  "Turnips",
+  "Watermelons",
+  "Winter Squash",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
