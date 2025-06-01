@@ -20,19 +20,15 @@ h1 a {
   text-decoration: underline;
 }
 
-/* Fix Task dropdown size */
 #task {
   width: 100%;
   min-height: 42px;
+  min-width: 240px;
   font-size: 1rem;
   padding: 10px;
   box-sizing: border-box;
+  appearance: auto;
 }
-
-#task {
-  min-width: 240px;
-}
-
 select option[disabled] {
   color: #999;
 }
