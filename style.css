@@ -39,6 +39,13 @@ select, input, textarea, button {
   z-index: 1;
 }
 
+.form-group {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
 textarea {
   resize: vertical;
 }
