@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   focusAreaField.addEventListener("change", () => {
     const area = focusAreaField.value;
-    taskField.innerHTML = "<option value='' disabled selected hidden>Select a task...</option>";
+    
     if (taskOptions[area]) {
       taskOptions[area].forEach(task => {
         const opt = document.createElement("option");
