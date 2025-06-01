@@ -87,5 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
       alert("Error submitting data: " + err.message);
     }
+
+    // Add styling to make header look like a clickable link
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("h1");
+  header.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/10hQO58RhY1IeBRYz8FqaO3LB1lhU-3RC5NiYZOS2E8U/edit?usp=sharing" target="_blank" style="color: #007BFF; text-decoration: underline;">Daily Report</a>`;
+});
   });
 });
