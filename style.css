@@ -33,6 +33,10 @@ h1 a {
   min-width: 240px;
 }
 
+select option[disabled] {
+  color: #999;
+}
+
 
 /* Allow dropdown options to expand properly */
 #task option {
