@@ -36,18 +36,18 @@ const taskOptions = {
   CommercialKitchen: [
     "Veg Prep",
     "Cooking",
-    "Portioning"
-    "Labelling"
-    "Cleaning & Sanitization"
+    "Portioning",
+    "Labelling",
+    "Cleaning & Sanitization",
     "Dehydrating"
   ],
   Admin: [
     "Sales & Marketing",
     "Social Media",
-    "Crop Planning"
-    "Documentation & SOPs"
-    "Staff Management & Scheduling"
-    "Customer Support & CSA"
+    "Crop Planning",
+    "Documentation & SOPs",
+    "Staff Management & Scheduling",
+    "Customer Support & CSA",
     "Maintenance"
   ]
 };
@@ -98,7 +98,7 @@ const cropOptions = [
   "Tomatoes",
   "Turnips",
   "Watermelons",
-  "Winter Squash",
+  "Winter Squash"
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -150,11 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
       alert("Error submitting data: " + err.message);
     }
-
+  });
+  
     // Add styling to make header look like a clickable link
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("h1");
   header.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/10hQO58RhY1IeBRYz8FqaO3LB1lhU-3RC5NiYZOS2E8U/edit?usp=sharing" target="_blank" style="color: #007BFF; text-decoration: underline;">Daily Report</a>`;
-});
+
   });
-});
+
