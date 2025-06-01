@@ -110,17 +110,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskField = document.getElementById("task");
   const cropField = document.getElementById("crop");
 
-  focusAreaField.addEventListener("change", () => {
-    const area = focusAreaField.value;
-    
-    if (taskOptions[area]) {
-      taskOptions[area].forEach(task => {
-        const opt = document.createElement("option");
-        opt.value = opt.textContent = task;
-        taskField.appendChild(opt);
-      });
-    }
-  });
+focusAreaField.addEventListener("change", () => {
+  const area = focusAreaField.value;
+
+  // Clear all but the first placeholder option
+  taskField.innerHTML = '<option value="" disabled selected hidden>Select a task...</option>';
+
+  if (taskOptions[area]) {
+    taskOptions[area].forEach(task => {
+      const opt = document.createElement("option");
+      opt.value = opt.textContent = task;
+      taskField.appendChild(opt);
+    });
+  }
+});
+
 
   cropOptions.forEach(crop => {
     const opt = document.createElement("option");
