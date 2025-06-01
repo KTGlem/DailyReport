@@ -20,6 +20,21 @@ h1 a {
   text-decoration: underline;
 }
 
+select {
+  appearance: auto; /* restore default dropdown behavior */
+  height: auto;     /* allow dropdown height to expand */
+  min-height: 42px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+
 label {
   display: block;
   margin-top: 12px;
