@@ -31,7 +31,7 @@ const taskOptions = {
     "Harvesting",
     "Cleaning & Sanitizing",
     "Dehydrating",
-    "Labelling"    
+    "Labelling"
   ],
   CommercialKitchen: [
     "Veg Prep",
@@ -110,21 +110,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskField = document.getElementById("task");
   const cropField = document.getElementById("crop");
 
-focusAreaField.addEventListener("change", () => {
-  const area = focusAreaField.value;
+  focusAreaField.addEventListener("change", () => {
+    const area = focusAreaField.value;
 
-  // Clear all but the first placeholder option
-  taskField.innerHTML = '<option value="" disabled selected hidden>Select a task...</option>';
+    // Clear all but placeholder
+    taskField.innerHTML = '<option value="" disabled selected hidden>Select a task... / Seleccione una tarea...</option>';
 
-  if (taskOptions[area]) {
-    taskOptions[area].forEach(task => {
-      const opt = document.createElement("option");
-      opt.value = opt.textContent = task;
-      taskField.appendChild(opt);
-    });
-  }
-});
-
+    if (taskOptions[area]) {
+      taskOptions[area].forEach(task => {
+        const opt = document.createElement("option");
+        opt.value = opt.textContent = task;
+        taskField.appendChild(opt);
+      });
+    }
+  });
 
   cropOptions.forEach(crop => {
     const opt = document.createElement("option");
@@ -155,9 +154,10 @@ focusAreaField.addEventListener("change", () => {
       alert("Error submitting data: " + err.message);
     }
   });
-  
-  // Add styling to make header look like a clickable link - MOVED THIS INSIDE THE MAIN DOMContentLoaded
+});
+
+// Make header a link
+document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("h1");
   header.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/10hQO58RhY1IeBRYz8FqaO3LB1lhU-3RC5NiYZOS2E8U/edit?usp=sharing" target="_blank" style="color: #007BFF; text-decoration: underline;">Daily Report</a>`;
-
-}); // This closing brace correctly matches the main DOMContentLoaded.
+});
