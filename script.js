@@ -2,53 +2,53 @@
 
 const taskOptions = {
   MarketGarden: [
-    "Assembly & Packaging",
-    "Bed Cleanup - Post Harvest",
-    "Bed Prep (Tarp, Amend, Till)",
-    "Bed Prep (Ground Cover, Drip Tape)",
-    "Build Cat Tunnel",
-    "Clean Bins",
-    "Clean Wash & Pack",
-    "Direct Sow",
-    "Fertilize & Amend",
-    "Fish Fertilizer",
-    "Harden Off",
-    "Harvest / Pack",
-    "Hill Beds",
-    "Irrigate",
-    "Irrigation - Setup",
-    "Irrigation - Repairs",
-    "Mulch",
-    "Nursery Sow",
-    "Organizing & Materials Prep",
-    "Pot Up",
-    "Prune / Trellis",
-    "Sprout Potatoes",
-    "Transplant",
-    "Weed"
+    "Assembly & Packaging / Ensamblaje y Embalaje",
+    "Bed Cleanup - Post Harvest / Limpieza de Camas - Post Cosecha",
+    "Bed Prep (Tarp, Amend, Till) / Preparación de Camas (Lona, Enmendar, Labrar)",
+    "Bed Prep (Ground Cover, Drip Tape) / Preparación de Camas (Cubierta, Cinta de Goteo)",
+    "Build Cat Tunnel / Construir Túnel para Gatos",
+    "Clean Bins / Limpiar Contenedores",
+    "Clean Wash & Pack / Limpiar Lavado y Empaque",
+    "Direct Sow / Siembra Directa",
+    "Fertilize & Amend / Fertilizante y Enmendar",
+    "Fish Fertilizer / Fertilizante de Pescado",
+    "Harden Off / Endurecer Plántulas",
+    "Harvest / Pack / Cosechar / Empacar",
+    "Hill Beds / Acolchar Camas",
+    "Irrigate / Regar",
+    "Irrigation - Setup / Riego - Configuración",
+    "Irrigation - Repairs / Riego - Reparaciones",
+    "Mulch / Acolchado",
+    "Nursery Sow / Siembra en Vivero",
+    "Organizing & Materials Prep / Organización y Preparación de Materiales",
+    "Pot Up / Trasplantar a Macetas",
+    "Prune / Trellis / Podar / Entutorar",
+    "Sprout Potatoes / Brotar Patatas",
+    "Transplant / Trasplantar",
+    "Weed / Desmalezar"
   ],
   Mushrooms: [
-    "Harvesting",
-    "Cleaning & Sanitizing",
-    "Dehydrating",
-    "Labelling"
+    "Harvesting / Cosecha",
+    "Cleaning & Sanitizing / Limpieza y Sanitización",
+    "Dehydrating / Deshidratación",
+    "Labelling / Etiquetado"
   ],
   CommercialKitchen: [
-    "Veg Prep",
-    "Cooking",
-    "Portioning",
-    "Labelling",
-    "Cleaning & Sanitization",
-    "Dehydrating"
+    "Veg Prep / Preparación de Verduras",
+    "Cooking / Cocina",
+    "Portioning / Porcionado",
+    "Labelling / Etiquetado",
+    "Cleaning & Sanitization / Limpieza y Sanitización",
+    "Dehydrating / Deshidratación"
   ],
   Admin: [
-    "Sales & Marketing",
+    "Sales & Marketingg",
     "Social Media",
     "Crop Planning",
     "Documentation & SOPs",
     "Staff Management & Scheduling",
     "Customer Support & CSA",
-    "Maintenance"
+    "Maintenance / Mantenimiento"
   ]
 };
 
