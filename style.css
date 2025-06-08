@@ -28,6 +28,10 @@ h1 a {
   padding: 10px;
   box-sizing: border-box;
   appearance: auto; /* Ensure default appearance is restored */
+  /* REMOVE these aggressive height/overflow rules if they were added */
+  /* height: 200px; */
+  /* overflow-y: auto; */
+  /* display: block; */ /* Also remove this specific display if it was added here */
 }
 select option[disabled] {
   color: #999;
@@ -47,31 +51,7 @@ select option[disabled] {
   box-shadow: 0 0 3px rgba(76, 175, 80, 0.5);
 }
 
-/* --- NEW OR MODIFIED RULES BELOW --- */
-
-/* Force specific display for the task dropdown to render as a list box */
-#task[size] {
-  height: auto; /* Allow height to adjust based on size attribute */
-  min-height: 42px; /* Ensure minimum height */
-  overflow-y: auto; /* Add scrollbar if content overflows */
-}
-
-/* This is a more direct attempt to force expansion on focus/active state */
-#task:focus,
-#task:active {
-  min-height: unset; /* Remove any minimum height that might restrict expansion */
-  height: auto; /* Allow height to expand based on content */
-  display: block; /* Ensure it behaves like a block element */
-  position: absolute; /* Take it out of flow to prevent pushing other elements */
-  z-index: 1000; /* Ensure it appears above other elements */
-  width: 100%; /* Maintain full width */
-  max-height: 200px; /* Set a max height and let it scroll if needed */
-  border: 1px solid #4CAF50; /* Add a distinct border */
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7); /* Add a shadow */
-}
-
-
-/* General select styling - ensure it doesn't restrict height */
+/* Ensure general select styling allows for dynamic height based on size attribute */
 select {
   appearance: auto; /* restore default dropdown behavior */
   height: auto;     /* allow dropdown height to expand */
