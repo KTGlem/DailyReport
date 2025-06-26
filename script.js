@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://api.sheetbest.com/sheets/7a7b6717-a71e-4ac3-a4ba-855d9844c152", {
+      const response = await fetch("https://sheetdb.io/api/v1/x0fruh6d0wc2w", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
